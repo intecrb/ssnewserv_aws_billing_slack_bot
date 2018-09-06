@@ -28,6 +28,11 @@ Resources:
                     Properties:
                         Path: /hello
                         Method: get
+                Schedule:
+                    Type: Schedule
+                    Properties:
+                        # 毎日12時に実行する
+                        Schedule: cron(0 3 * * ? *)
 
 Outputs:
 
